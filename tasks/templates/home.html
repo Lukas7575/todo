@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    {% load static %}  <!-- Загрузка статических тегов -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">  <!-- Если есть стили -->
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в Todo App!</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Главная</a></li>
+                <li><a href="{% url 'login_user' %}">Войти</a></li>
+                <li><a href="{% url 'register' %}">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Основное содержимое страницы -->
+</body>
+</html>
